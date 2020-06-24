@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/sbde-client/sbde-client.iml" filepath="$PROJECT_DIR$/sbde-client/sbde-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sbde-client/sbde-client.iml" filepath="$PROJECT_DIR$/sbde-client/sbde-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/sbde-clientApp.iml" filepath="$PROJECT_DIR$/.idea/sbde-clientApp.iml" />
     </modules>
   </component>
