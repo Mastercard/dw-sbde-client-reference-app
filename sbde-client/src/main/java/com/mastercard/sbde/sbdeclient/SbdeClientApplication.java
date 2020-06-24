@@ -17,7 +17,6 @@ import java.security.cert.CertificateException;
 import java.util.List;
 import java.util.Map;
 
-
 public class SbdeClientApplication {
 
 	public static void main(String[] args) throws IOException, UnrecoverableKeyException, CertificateException, NoSuchAlgorithmException, KeyStoreException {
@@ -147,6 +146,7 @@ public class SbdeClientApplication {
 
 	public static void err(String message) {
 		System.err.println(message);
+		
 	}
 
 }
