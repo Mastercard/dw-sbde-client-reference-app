@@ -48,7 +48,7 @@ in the project's root directory.
 ## API Usage
 Get Merchant data based on Merchant location ID (MMHID)
 The endpoint(MMHID) provide the merchant information.
-The merchant information parameterf which can be obtained using this API are listed here 
+The merchant information that can be obtained using this API are listed here 
 (https://developer.mastercard.com/documentation/small-business-decision-enhancer/v1#api_merchant_performance)
 
 
