@@ -14,17 +14,17 @@ This project showcases the use case of retrieving merchant data from small busin
 
 ## Setup
 1. Create an account at [Mastercard Developers](https://developer.mastercard.com).
-2. Create a new project and add the `Places` API to your project. A `.p12` file is downloaded automatically.
+2. Create a new project and add the `SBDE` API to your project. A `.p12` file is downloaded automatically.
 3. Take note of the given **consumer key, keyalias, and keystore password** given upon the project creation.
 4. Copy the downloaded `.p12` file to `/src/main/resources`.
 5. Update the properties found under `/src/main/resources/application.properties`.
 6. Run `mvn clean install` from the root of the project directory.
-7. run `java -jar target/location-intelligence-places-reference-app-1.0.0.jar` to start the project.
+7. run `java -jar sbde-java-client.jar` to start the project.
 8. Navigate to `http://localhost:8080/` in your browser.
 9. Start hitting endpoints! Sample parameters have been included in the fields automatically.
 
 ## Tutorial
-A tutorial can be found [here](https://developer.mastercard.com/documentation/places/2#tutorials-section) 
+A tutorial can be found [here](https://developer.mastercard.com/documentation/small-business-decision-enhancer) 
 for setting up and using this service.
 
 ## Mastercard oauth1 Signer
@@ -39,15 +39,17 @@ This dependency is required to properly call the API.
 
 [Looking for other languages?](https://github.com/Mastercard?q=oauth&type=&language=)
 
-## Places Client Library
+## SBDE Client Library
 The client library used to generate the API Calls and object models for this application can be seen in the pom.xml file
 in the project's root directory.
 
     
 
 ## API Usage
-Get Merchant daily data based on Merchant location ID (MMHID)
+Get Merchant data based on Merchant location ID (MMHID)
 The endpoint(MMHID) provide the merchant information.
+The merchant information parameterf which can be obtained using this API are listed here 
+(https://developer.mastercard.com/documentation/small-business-decision-enhancer/v1#api_merchant_performance)
 
 
 ## License
