@@ -1,4 +1,4 @@
-# Places API Reference Application
+# SBDE API Reference Application
 This project showcases the use case of retrieving merchant data from small business decision enhancer API [here](https://developer.mastercard.com/product/small-business-decision-enhancer)
 
 ## Frameworks Used
