@@ -19,9 +19,10 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws Exception {
+
         String consumerKey = "Your consumer key"; // You should copy this from "My Keys" on your project page e.g. UTfbhDCSeNYvJpLL5l028sWL9it739PYh6LU5lZja15xcRpY!fd209e6c579dc9d7be52da93d35ae6b6c167c174690b72fa
         String signingKeyAlias = "your key alias";
-        String signingKeyFilePath = "path to your .p12 private key file"; // e.g. /Users/yourname/project/sandbox.p12
+        String signingKeyFilePath = "path to your.p12 private key file"; // e.g. /Users/yourname/project/sandbox.p12
         String signingKeyPassword = "your password";
         PrivateKey signingKey = AuthenticationUtils.loadSigningKey(signingKeyFilePath, signingKeyAlias, signingKeyPassword);
 
