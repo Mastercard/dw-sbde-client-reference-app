@@ -18,8 +18,8 @@ This project showcases the use case of retrieving merchant metrics using the SBD
 3. Take note of the given **consumer key, keyalias, and keystore password** given upon the project creation.
 4. Copy the downloaded `.p12` file to `/src/main/resources`.
 5. Copy the small-business-decision.yaml file to `/src/main/resources`.
-5. Update the pom.xml with with open-api-generator properties.
-6. Run `mvn clean install` from the root of the project directory.
+6. Update the pom.xml with with open-api-generator dependencies.
+7. Run `mvn clean install` from the root of the project directory.
 
 
 ## Tutorial
