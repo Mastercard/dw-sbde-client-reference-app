@@ -17,7 +17,6 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Main {
-
     public static void main(String[] args) throws Exception {
 
         String consumerKey = "Your consumer key"; // You should copy this from "My Keys" on your project page e.g. UTfbhDCSeNYvJpLL5l028sWL9it739PYh6LU5lZja15xcRpY!fd209e6c579dc9d7be52da93d35ae6b6c167c174690b72fa
@@ -39,7 +38,6 @@ public class Main {
         MerchantLocation merchantLocation = merchantLocationApi.getMerchantLocationByMerchantLocationId(1234567L);
 
         System.out.println(merchantLocation.toString());
-
 
         // Metrics API's
         MerchantLocationMetricsApi merchantLocationMetricsApi = new MerchantLocationMetricsApi(client);

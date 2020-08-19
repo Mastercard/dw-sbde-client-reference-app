@@ -24,7 +24,6 @@
                         <configuration>
                             <inputSpec>${project.basedir}/src/main/resources/small-business-decision-enhancer.yaml</inputSpec>
                             <generatorName>java</generatorName>
-                            <!-- No "library" element here means the plugin will use the default library template ("okhttp-gson") -->
                             <configOptions>
                                 <sourceFolder>src/gen/java/main</sourceFolder>
                                 <dateLibrary>java8</dateLibrary>
