@@ -26,7 +26,7 @@ public class Main {
         PrivateKey signingKey = AuthenticationUtils.loadSigningKey(signingKeyFilePath, signingKeyAlias, signingKeyPassword);
 
         ApiClient client = new ApiClient();
-        client.setBasePath("https://sandbox.api.mastercard.com");
+        client.setBasePath("https://sandbox.api.mastercard.com/sbde/metrics-api"); //If you use any other sandbox url then please add sbde/metrics-api as an extension
         client.setDebugging(true);
 
         List<Interceptor> interceptors = client.getHttpClient().networkInterceptors();
@@ -35,7 +35,7 @@ public class Main {
 
         // Get the Merchant Location Info
         MerchantLocationApi merchantLocationApi = new MerchantLocationApi(client);
-        MerchantLocation merchantLocation = merchantLocationApi.getMerchantLocationByMerchantLocationId(1234567L);
+        MerchantLocation merchantLocation = merchantLocationApi.getMerchantLocationByMerchantLocationId(123456789L);
 
         System.out.println(merchantLocation.toString());
 
@@ -44,7 +44,7 @@ public class Main {
 
         // Get the Merchant Location Daily Metrics
         MerchantLocationDailyMetrics dailyMetrics = merchantLocationMetricsApi.getMerchantLocationDailyMetricsByMerchantLocationId(
-                1234567L,
+                123456789L,
                 LocalDate.of(2020, 1, 31),
                 LocalDate.of(2016, 1, 31),
                 25,
@@ -58,7 +58,7 @@ public class Main {
         MerchantLocationPerformanceMetricsApi merchantLocationPerformanceMetricsApi = new MerchantLocationPerformanceMetricsApi(client);
 
         MerchantLocationPerformanceMetrics performanceMetrics = merchantLocationPerformanceMetricsApi.getPerformanceMetricsByMerchantLocationId(
-                1234567L,
+                123456789L,
                 LocalDate.of(2020, 1, 31),
                 LocalDate.of(2016, 1, 31),
                 "-period"

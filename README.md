@@ -1,5 +1,5 @@
 # SBDE API Reference Application
-This project showcases the use case of retrieving merchant metrics using the SBDE API [here](https://developer.mastercard.com/drafts/small-business-decision-enhancer/small-business-decision-enhancer-v2/documentation)
+This project showcases the use case of retrieving merchant metrics using the SBDE API [here](https://developer.mastercard.com/drafts/small-business-decision-enhancer-v2/new-sbde-v2-documentation/documentation/)
 
 ## Frameworks Used
 - Spring
@@ -20,10 +20,11 @@ This project showcases the use case of retrieving merchant metrics using the SBD
 5. Copy the small-business-decision.yaml file to `/src/main/resources`.
 6. Update the pom.xml with with open-api-generator dependencies.
 7. Run `mvn clean install` from the root of the project directory.
+8. Add `sbde/metrics-api` as an extension to the sandbox url.
 
 
 ## Tutorial
-A tutorial can be found [here](https://developer.mastercard.com/drafts/small-business-decision-enhancer/S1509344-tutorials/documentation/tutorials-and-guides/) 
+A tutorial can be found [here](https://developer.mastercard.com/drafts/small-business-decision-enhancer-v2/new-sbde-v2-documentation/documentation/tutorials-and-guides/) 
 for setting up and using this service.
 
 ## Mastercard oauth1 Signer
