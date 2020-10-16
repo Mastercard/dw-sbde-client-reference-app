@@ -2,7 +2,7 @@
 
 Small Business Decision Enhancer API
 - API version: 1.0.0
-  - Build date: 2020-08-14T12:14:35.054+01:00[Europe/London]
+  - Build date: 2020-10-13T09:15:34.427+01:00[Europe/London]
 
 API for retrieving small business performance metrics such as daily, weekly, monthly and yearly metrics. These metrics detail information such as the number of transactions, amount spent and the breakdown of types of transactions at these locations.
 

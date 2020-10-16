@@ -8,16 +8,15 @@ import org.openapitools.client.ApiException;
 import org.openapitools.client.api.MerchantLocationApi;
 import org.openapitools.client.api.MerchantLocationMetricsApi;
 import org.openapitools.client.api.MerchantLocationPerformanceMetricsApi;
+import org.openapitools.client.model.LegacyPerformanceMetrics;
 import org.openapitools.client.model.MerchantLocation;
 import org.openapitools.client.model.MerchantLocationDailyMetric;
 import org.openapitools.client.model.MerchantLocationDailyMetrics;
-import org.openapitools.client.model.MerchantLocationMetric;
 import org.openapitools.client.model.MerchantLocationPerformanceMetrics;
 
 import java.time.LocalDate;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Matchers.anyLong;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.reset;
 import static org.mockito.Mockito.when;
@@ -108,7 +107,29 @@ public class ApiServiceTest {
     }
 
     @Test
-    public void getPerformanceMetricsByMerchantLocationId() {
+    public void getPerformanceMetricsByMerchantLocationId() throws ApiException {
+        // arrange
+        Long merchantLocationId = 1L;
+        MerchantLocationPerformanceMetrics expected = new MerchantLocationPerformanceMetrics()
+                .merchant(new MerchantLocation())
+                .performance(new LegacyPerformanceMetrics());
 
+        when(merchantLocationPerformanceMetricsApi.getPerformanceMetricsByMerchantLocationId(
+                merchantLocationId,
+                null,
+                null,
+                null
+        )).thenReturn(expected);
+
+        // act
+        MerchantLocationPerformanceMetrics result = apiService.getPerformanceMetricsByMerchantLocationId(
+                merchantLocationId,
+                null,
+                null,
+                null
+        );
+
+        // assert
+        assertEquals(expected, result);
     }
 }

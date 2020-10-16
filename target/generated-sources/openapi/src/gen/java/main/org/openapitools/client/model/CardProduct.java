@@ -28,7 +28,7 @@ import java.io.IOException;
  * Card Product
  */
 @ApiModel(description = "Card Product")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-08-14T12:14:35.054+01:00[Europe/London]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-10-13T09:17:31.952+01:00[Europe/London]")
 public class CardProduct {
   public static final String SERIALIZED_NAME_PRODUCT = "product";
   @SerializedName(SERIALIZED_NAME_PRODUCT)

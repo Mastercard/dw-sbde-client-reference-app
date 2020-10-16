@@ -28,7 +28,7 @@ import java.io.IOException;
  * Details of the error condition such as the source of the error, reason code for the error, if the error is recoverable, and details about the error
  */
 @ApiModel(description = "Details of the error condition such as the source of the error, reason code for the error, if the error is recoverable, and details about the error")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-08-14T12:14:35.054+01:00[Europe/London]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-10-13T09:17:31.952+01:00[Europe/London]")
 public class Error {
   public static final String SERIALIZED_NAME_SOURCE = "Source";
   @SerializedName(SERIALIZED_NAME_SOURCE)

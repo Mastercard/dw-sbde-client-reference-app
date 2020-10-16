@@ -33,7 +33,7 @@ import org.openapitools.client.model.MerchantLocationWeeklyPerformanceMetric;
  * List of available merchant location performance metrics for this location
  */
 @ApiModel(description = "List of available merchant location performance metrics for this location")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-08-14T12:14:35.054+01:00[Europe/London]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-10-13T09:17:31.952+01:00[Europe/London]")
 public class LegacyPerformanceMetrics {
   public static final String SERIALIZED_NAME_MMHID = "mmhid";
   @SerializedName(SERIALIZED_NAME_MMHID)

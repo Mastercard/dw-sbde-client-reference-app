@@ -29,7 +29,7 @@ import java.time.LocalDate;
  * Available information about this location such as the name, address and contact details.
  */
 @ApiModel(description = "Available information about this location such as the name, address and contact details.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-08-14T12:14:35.054+01:00[Europe/London]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-10-13T09:17:31.952+01:00[Europe/London]")
 public class MerchantLocation {
   public static final String SERIALIZED_NAME_MERCHANT_LOCATION_ID = "merchantLocationId";
   @SerializedName(SERIALIZED_NAME_MERCHANT_LOCATION_ID)

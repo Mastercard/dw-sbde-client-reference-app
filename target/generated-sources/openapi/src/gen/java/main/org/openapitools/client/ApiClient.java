@@ -57,7 +57,7 @@ import org.openapitools.client.auth.OAuthFlow;
 
 public class ApiClient {
 
-    private String basePath = "https://sandbox.api.mastercard.com";
+    private String basePath = "http://sandbox.api.mastercard.com/sbde/metrics-api";
     private boolean debugging = false;
     private Map<String, String> defaultHeaderMap = new HashMap<String, String>();
     private String tempFolderPath = null;

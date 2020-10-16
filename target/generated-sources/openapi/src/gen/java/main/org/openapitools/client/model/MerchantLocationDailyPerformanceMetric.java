@@ -29,7 +29,7 @@ import java.time.LocalDate;
  * Metrics for this location on this day such as the total number of transactions and the total amount spent
  */
 @ApiModel(description = "Metrics for this location on this day such as the total number of transactions and the total amount spent")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-08-14T12:14:35.054+01:00[Europe/London]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-10-13T09:17:31.952+01:00[Europe/London]")
 public class MerchantLocationDailyPerformanceMetric {
   public static final String SERIALIZED_NAME_PERIOD = "period";
   @SerializedName(SERIALIZED_NAME_PERIOD)
