@@ -32,7 +32,7 @@ public class MainTest {
     }
 
     @Test
-    public void mainTest() throws Exception {
+    public void mainTest_HappyEndingTest() throws Exception {
         // arrange
         doReturn(new MerchantLocation())
                 .when(apiService)
@@ -66,7 +66,7 @@ public class MainTest {
     }
 
     @Test(expected = ApiException.class)
-    public void merchantLocationDailyMetrics_Exception() throws Exception {
+    public void merchantLocationDailyMetrics_Exception_UnhappyEndpoints() throws Exception {
         // arrange
         doReturn(new MerchantLocation())
                 .when(apiService)
@@ -75,14 +75,14 @@ public class MainTest {
 
         doThrow(new ApiException("message"))
                 .when(apiService)
-                .getMerchantLocationByMerchantLocationId(anyLong());
+                .getMerchantLocationDailyMetricsByMerchantLocationId(any(),any(),any(),any(),any(),any());
 
         // act
         Main.main(new String[]{});
     }
 
     @Test(expected = ApiException.class)
-    public void merchantLocationPerformanceMetrics_Exception() throws Exception {
+    public void merchantLocationPerformanceMetrics_Exception_UnhappyEndpoints() throws Exception {
         // arrange
         doReturn(new MerchantLocation())
                 .when(apiService)
@@ -94,7 +94,7 @@ public class MainTest {
 
         doThrow(new ApiException("message"))
                 .when(apiService)
-                .getMerchantLocationByMerchantLocationId(anyLong());
+                .getPerformanceMetricsByMerchantLocationId(any(),any(),any(),any());
 
         // act
         Main.main(new String[]{});
