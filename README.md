@@ -76,7 +76,7 @@ A tutorial can be found [here](https://developer.mastercard.com/small-business-d
 
 ### Build and Execute <a name="build-and-execute"> </a>
 6. Run `mvn clean compile` from the root of the project directory.
-    * When compile is run, the [OpenAPI Generator plugin](#integrating-with-openapi-generator) will generate the sources for connecting to the Places API.
+    * When compile is run, the [OpenAPI Generator plugin](#integrating-with-openapi-generator) will generate the sources for connecting to the SBDE API.
 7. run `mvn exec:java -Dexec.mainClass="com.mastercard.sbde.Main"` to run the project.
 
 ### Reference Application Usage <a name="reference-application-usage"></a>
